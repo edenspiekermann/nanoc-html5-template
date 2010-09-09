@@ -1,0 +1,22 @@
+!!! 5
+-#
+  Use the ie_html tag below instead of the %html tag if you prefer
+  the IE conditionals on the HTML tag instead of the body tag
+  http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither
+
+-# ie_html :lang => 'en', :class => 'no-js' do
+%html.no-js{:lang => "en"}
+  = render '_head'
+
+  - ie_body :class => "#{@item.identifier}" do
+    #container
+      %header#header
+        = render '_header'
+      #main
+        -# render '_flashes'
+        = yield
+      %footer#footer
+        = render '_footer'
+
+    -# Javascript at the bottom for fast page loading
+    = render '_javascripts'

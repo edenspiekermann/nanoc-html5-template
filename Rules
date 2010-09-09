@@ -1,0 +1,53 @@
+#!/usr/bin/env ruby
+require 'compass'
+Compass.add_project_configuration 'config/compass.rb'
+
+compile '/stylesheets/partials/_*/' do
+  # don't output partials, so return nil
+  nil
+end
+
+compile '/stylesheets/*/' do
+  filter :sass, Compass.sass_engine_options
+end
+
+# A few helpful tips about the Rules file:
+#
+# * The order of rules is important: for each item, only the first matching
+#   rule is applied.
+#
+# * Item identifiers start and end with a slash (e.g. “/about/” for the file
+#   “content/about.html”). To select all children, grandchildren, … of an
+#   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
+#   because “*” matches zero or more characters.
+
+compile '*' do
+  ext = item[:extension].nil? ? nil : item[:extension].split('.').last
+
+  case ext
+  when 'md'
+    filter :kramdown
+  when 'haml'
+    filter :haml
+  else
+    filter :haml
+  end
+
+  layout 'default'
+end
+
+route '/stylesheets/partials/_*/' do
+  # don't output partials, so return nil
+  nil
+end
+
+route '/stylesheets/*/' do
+  # don't generate a directory like we do for HTML files
+  item.identifier.chop + '.css'
+end
+
+route '*' do
+  item.identifier + 'index.html'
+end
+
+layout '*', :haml

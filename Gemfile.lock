@@ -1,0 +1,26 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    activesupport (3.0.0)
+    compass (0.10.5)
+      haml (>= 3.0.4)
+    cri (1.0.1)
+    haml (3.0.18)
+    html5-boilerplate (0.2.1)
+      compass (>= 0.10.0)
+    kramdown (0.10.0)
+    nanoc (3.1.5)
+      nanoc3 (>= 3.1.5)
+    nanoc3 (3.1.5)
+      cri (>= 1.0.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activesupport (~> 3.0)
+  compass (~> 0.10.5)
+  haml
+  html5-boilerplate
+  kramdown
+  nanoc (~> 3.1.5)
