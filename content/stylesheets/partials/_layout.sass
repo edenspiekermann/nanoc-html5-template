@@ -12,9 +12,15 @@
  *  120px  264px  408px  552px  696px   (24px gutters)
 
 body
+  text-align: center
+
+#page
   background: rgb(232, 232, 232)
   padding: 60px 36px 0
   width: 696px
+  margin: 0 auto
+  text-align: left
+  overflow: hidden
 
 #example
   height: 600px
@@ -28,7 +34,7 @@ body
  *  120px  264px   (24px gutters)
 
 @media only screen and (max-width: 767px)
-  body
+  #page
     padding: 48px 28px 0
     width: 264px
 
@@ -40,7 +46,7 @@ body
  *  120px  264px  408px  552px  696px  840px  984px  1128px   (24px gutters)
 
 @media only screen and (min-width: 1224px)
-  body
+  #page
     padding: 72px 48px 0
     width: 1128px
 
@@ -52,7 +58,7 @@ body
  *  120px  264px  408px  552px  696px  840px  984px  1128px  1272px  1416px  1560px  1704px
 
 @media only screen and (min-width: 1824px)
-  body
+  #page
     padding: 96px 60px
     width: 1704px
 
