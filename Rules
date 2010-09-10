@@ -12,10 +12,10 @@ compile '/stylesheets/*/' do
 end
 
 
-compile '/case_study/*/' do
+compile '/projects/case_study_*/*/' do
 end
 
-route '/case_study/*/' do
+route '/projects/case_study_*/*/' do
   # Make sure that /gallery/some_image/ is routed to
   # /gallery/some_image.jpg or /gallery/some_image.png or so
   item.identifier.chop + '.' + item[:extension]

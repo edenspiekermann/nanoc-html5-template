@@ -1,0 +1,13 @@
+---
+title: Projects
+---
+
+%ul
+  = @item.children.each do |item|
+    %li
+      %a{:href => item.path}
+        #{item.path}
+
+%p
+  =loremipsum_text
+  
