@@ -16,10 +16,18 @@
 //@include html5-boilerplate-helpers;
 //@include html5-boilerplate-media;
 
-// Or else, you can import this partial if you
-// want more controll over which mixins to use
-// @import partials/example
-
 // Finally, put your own styles in this partial
+
 @import compass/css3
-@import partials/less2
+@import compass/utilities/general/clearfix
+@import compass/utilities/general/min
+@import compass/utilities/general/float
+
+@import partials/screen
+@import partials/print
+@import partials/layout
+@import partials/typography
+
+@import partials/header
+@import partials/navigation
+@import partials/footer
