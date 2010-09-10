@@ -11,6 +11,16 @@ compile '/stylesheets/*/' do
   filter :sass, Compass.sass_engine_options
 end
 
+
+compile '/case_study/*/' do
+end
+
+route '/case_study/*/' do
+  # Make sure that /gallery/some_image/ is routed to
+  # /gallery/some_image.jpg or /gallery/some_image.png or so
+  item.identifier.chop + '.' + item[:extension]
+end
+
 # A few helpful tips about the Rules file:
 #
 # * The order of rules is important: for each item, only the first matching
@@ -51,3 +61,6 @@ route '*' do
 end
 
 layout '*', :haml
+
+
+
