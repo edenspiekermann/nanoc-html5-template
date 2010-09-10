@@ -1,16 +1,15 @@
 %ul.nav
   %li
     - home = @items.find { |i| i.identifier == '/' }
-    = link_to_unless_current('Home', home)
+    = link_to_unless_current('Home', home, :title => 'Home')
   %li
     - contact = @items.find { |i| i.identifier == '/contact/' }
-    = link_to_unless_current('Contact', contact)
+    = link_to_unless_current('Contact',contact, :title => 'Contact')
   %li
     - about = @items.find { |i| i.identifier == '/about/' }
-    = link_to_unless_current('About', about)
-    
+    = link_to_unless_current('About', about, :title => 'About')
   %li
     - case_study = @items.find { |i| i.identifier == '/case_study/' }
-    = link_to_unless_current('Case study', case_study)
+    = link_to_unless_current('Case study', case_study, :title => 'Case study')
 
 %h1 #{@item[:title]}
