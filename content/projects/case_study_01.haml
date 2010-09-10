@@ -5,8 +5,8 @@ title: Case Study
 %p
   =loremipsum_text
   
-%ul.fourSquare
-  = @item.children.each do |img|
+%ul.quarterSquare
+  - @item.children.each do |img|
     %li
-      %a{:href => img.path, :title => "check out this image in its actual size" }
+      %a{:href => img.path, :title => "check out this image in its actual size"}
         %img{:src => img.path}
