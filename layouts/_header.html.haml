@@ -1,15 +1,9 @@
+- navmenue = @items.find { |i| i.reps[0].path == '/' }
 %ul.nav
   %li
-    - home = @items.find { |i| i.identifier == '/' }
-    = link_to_unless_current('Home', home)
-  %li
-    - contact = @items.find { |i| i.identifier == '/contact/' }
-    = link_to_unless_current('Contact', contact)
-  %li
-    - about = @items.find { |i| i.identifier == '/about/' }
-    = link_to_unless_current('About', about)
-  %li
-    - projects = @items.find { |i| i.identifier == '/projects/' }
-    = link_to_unless_current('Projects', projects)
+    = link_to_unless_current(navmenue[:title], navmenue.reps[0])
+    - navmenue.children.each do |page| 
+      %li
+        = link_to_unless_current(page[:title], page.reps[0])
 
 %h1 #{@item[:title]}
