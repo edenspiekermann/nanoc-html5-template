@@ -2,7 +2,7 @@
 title: Projects
 ---
 
-%ul
+%ul.nav
   - @item.children.each do |item|
     %li
       %a{:href => item.path}
@@ -10,4 +10,3 @@ title: Projects
 
 %p
   =loremipsum_text
-  
