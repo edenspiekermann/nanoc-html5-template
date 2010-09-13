@@ -10,6 +10,18 @@ To sell good food responsibly – this was the principle Theo Gutberlet had in m
 * [![Reference Image](/projects/case_study_02/image-3.jpeg)](/projects/case_study_02/image-3.jpeg "check out this image in its actual size")
 * [![Reference Image](/projects/case_study_02/image-4.jpeg)](/projects/case_study_02/image-4.jpeg "check out this image in its actual size")
 * [![Reference Image](/projects/case_study_02/image-5.jpeg)](/projects/case_study_02/image-5.jpeg "check out this image in its actual size")
-{: .fourUp}
+{: .gallery .fourUp}
 
 This is a description ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+* [![Reference Image](/projects/case_study_02/image.jpeg)](/projects/case_study_02/image.jpeg "check out this image in its actual size")
+* [![Reference Image](/projects/case_study_02/image-1.jpeg)](/projects/case_study_02/image-1.jpeg "check out this image in its actual size")
+{: .gallery .twoUp}
+
+
+This is another description ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+* [![Reference Image](/projects/case_study_02/image.jpeg)](/projects/case_study_02/image.jpeg "check out this image in its actual size")
+* [![Reference Image](/projects/case_study_02/image-1.jpeg)](/projects/case_study_02/image-1.jpeg "check out this image in its actual size")
+* [![Reference Image](/projects/case_study_02/image-2.jpeg)](/projects/case_study_02/image-2.jpeg "check out this image in its actual size")
+{: .gallery .threeUp}

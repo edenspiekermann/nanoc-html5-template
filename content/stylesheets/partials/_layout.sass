@@ -22,6 +22,9 @@ body
   text-align: left
   overflow: hidden
   +pie-clearfix
+  
+  p
+    +column-width(500px)
 
 /* 
  *  2-column, 320 px layout for smartphones
@@ -33,6 +36,9 @@ body
   #page
     padding: 48px 28px 0
     width: 264px
+    
+    p
+      +column-width(264px)
 
 /* 
  *  8-column, 1224 px layout for desktops and laptops
@@ -44,7 +50,7 @@ body
   #page
     padding: 72px 48px 0
     width: 1128px
-
+    
 /* 
  *  12-column, 1824 px layout for gigantic screens   (24px gutters)
  *  ---------------------------------------------------------------------------------------
@@ -55,9 +61,7 @@ body
   #page
     padding: 96px 60px 0
     width: 1704px
-
-
-
+    
 /* 
  *  Overrides for iPhone 4 and other high device-pixel-ratio devices
  *  ----------------------------------------------------------------

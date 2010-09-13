@@ -11,7 +11,7 @@ images4square:
 %p
   =loremipsum_text
   
-%ul.fourUp
+%ul.gallery.fourUp
   - @item.children.each do |img|
     %li
       %a{:href => img.path, :title => "check out this image in its actual size" }
