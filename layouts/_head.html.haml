@@ -24,7 +24,12 @@
 
   = render '_stylesheets'
 
-  -# All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects
+  -# All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects and Typekit
+
+  %script{ :type => "text/javascript", :src => "http://use.typekit.com/rro3ggm.js"}
+  :javascript
+    try{Typekit.load();}catch(e){}
+
   = javascript_include_tag 'modernizr-1.5.min'
 
   -# csrf_meta_tag

@@ -14,7 +14,8 @@
         = render '_header'
       #main
         -# render '_flashes'
-        = yield
+        %article
+          = yield
       %footer#footer
         = render '_footer'
 

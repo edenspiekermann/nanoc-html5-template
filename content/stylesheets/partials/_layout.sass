@@ -5,7 +5,7 @@
  *  http://lessframework.com
 
 /*
- *  Default 5-column, 768 px layout for iPads, netbooks, and IE
+ *  Default 5-column, 768 px layout for iPads (portrait), netbooks, and IE
  *  (All other layouts inherit styles from this layout)
  *  -----------------------------------------------------------
  *  1      2      3      4      5     
@@ -27,18 +27,43 @@ body
     +column-width(500px)
 
 /* 
- *  2-column, 320 px layout for smartphones
+ *  2-column, 320 px layout for smartphones (iPhone portrait)
  *  ---------------------------------------
  *  1      2
  *  120px  264px   (24px gutters)
 
-@media only screen and (max-width: 767px)
+@media only screen and (max-width: 463px)
   #page
     padding: 48px 28px 0
     width: 264px
     
     p
       +column-width(264px)
+      
+/* 
+ *  3-column, 480 px layout for smartphones (iPhone landscape)
+ *  ---------------------------------------
+ *  1      2      3
+ *  120px  264px  408px   (24px gutters)
+
+@media only screen and (min-width: 464px) and (max-width: 767px)
+  #page
+    padding: 48px 28px 0
+    width: 408px
+
+    p
+      +column-width(408px)
+
+/* 
+ *  6-column, 936 px layout for desktops and laptops (also: iPad landscape)
+ *  ------------------------------------------------------------------------
+ *  1      2      3      4      5      6
+ *  120px  264px  408px  552px  696px  840px   (24px gutters)
+
+@media only screen and (min-width: 936px)
+  #page
+    padding: 72px 48px 0
+    width: 840px
 
 /* 
  *  8-column, 1224 px layout for desktops and laptops
