@@ -20,7 +20,7 @@
   = javascript_include_tag 'css3-mediaqueries'
 
 -#  Append your own using content_for :javascripts
-= yield :javascripts
+= yield :javascripts if block_given?
 
 -# yui profiler and profileviewer
 -# if Rails.env == 'development'

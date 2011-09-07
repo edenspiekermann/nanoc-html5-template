@@ -8,6 +8,7 @@ GEM
     haml (3.0.18)
     html5-boilerplate (0.2.1)
       compass (>= 0.10.0)
+    i18n (0.6.0)
     kramdown (0.10.0)
     nanoc (3.1.5)
       nanoc3 (>= 3.1.5)
@@ -22,5 +23,6 @@ DEPENDENCIES
   compass (~> 0.10.5)
   haml
   html5-boilerplate
+  i18n
   kramdown
   nanoc (~> 3.1.5)
